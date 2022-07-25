@@ -3,7 +3,7 @@ function getUserPosition() {
     navigator.geolocation.getCurrentPosition((pos) => {
       let lat = pos.coords.latitude;
       let long = pos.coords.longitude;
-      url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=imperial&APPID=66a3420f80848979c538a3e8731b617f`;
+      url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=imperial&APPID=TOKEN`;
       fetchApi(url);
     });
 }
